@@ -39,7 +39,7 @@ useEffect (() => {
 
   return (
     <div className="App">
-      <h1>Happy Pancake Day</h1>
+      <h1>Happy Pancake Day!!</h1>
       <p>Select the tabs below for different pancake topping ideas!</p>
       <div className='recipieList'>
       <ul > 

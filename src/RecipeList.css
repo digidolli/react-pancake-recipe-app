@@ -6,5 +6,6 @@ li {
   cursor: pointer;
 }
 li.active {
-  background-color: pink;
+  background-color: #f27059;
+  color: #f7b267;
 }
