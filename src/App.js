@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import RecipeList from './RecipeList.js';
 import {sweetPancakes, savoryPancakes, experimentalPancakes} from "./data.js"
@@ -44,14 +44,14 @@ useEffect (() => {
       <div className='recipieList' >
       <ul > 
         {list.map((item) => (
-          <RecipeList  title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
+          <RecipeList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
         ))}
       </ul>
       <div className='container' > 
       {data.map((d) => (
-        <div className='item' key={d.key}>
+        <div key={d.key} className='item' >
           <div >
-            <a href={d.link} target="_blank">
+            <a href={d.link} target="_blank" rel='noreferrer'>
             <img src={d.img} 
             alt={d.title}/> 
             </a>

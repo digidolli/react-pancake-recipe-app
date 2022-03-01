@@ -4,7 +4,7 @@ export const sweetPancakes = [
         title: "Chocolate Pancake",
         img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-pancake-0774dff.jpg?quality=90&webp=true&resize=440,400",
         link: "https://www.bbcgoodfood.com/recipes/chocolate-pancakes",
-        key: "1"
+        key: ""
     },
     {
         id: 2,
