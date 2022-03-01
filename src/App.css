@@ -3,6 +3,7 @@
   text-align: center;
   padding: 30px;
   color: #f25c54;
+  max-width: 600px;
 }
 p {
   padding: 10px;
@@ -14,10 +15,10 @@ p {
   flex-direction: column;
   align-items: center;
   border-radius: 40px;
+  padding: 30px;
 }
 ul {
   margin: 10px auto;
-  padding: 0;
   list-style: none;
   display: flex;
 }
@@ -27,13 +28,14 @@ ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 400px;
 }
 .item {
-  width: 220px;
+  width: 90px;
   height: 150px;
+  margin: 10px;
   border-radius: 20px;
-  margin: 10px 20px;
-  display: flex;
+  margin: 19px;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -44,8 +46,8 @@ h3 {
   padding: 10px;
 }
 img {
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 75px;
   border-radius: 20px;
   object-fit: cover;
   z-index: 1;

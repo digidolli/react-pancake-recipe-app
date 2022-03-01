@@ -17,7 +17,7 @@ export default function App() {
 },
 {
   id: "experimental",
-  title: "Experimental"
+  title: "Unusual"
 },
 ];
 
@@ -38,26 +38,25 @@ useEffect (() => {
 },[selected]);
 
   return (
-    <div className="App">
+    <div className="App" >
       <h1>Happy Pancake Day!!</h1>
       <p>Select the tabs below for different pancake topping ideas!</p>
-      <div className='recipieList'>
+      <div className='recipieList' >
       <ul > 
         {list.map((item) => (
-          <RecipeList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
+          <RecipeList  title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
         ))}
       </ul>
-      <div className='container'> 
+      <div className='container' > 
       {data.map((d) => (
-        <div className='item' key={d.title}>
-          <div>
+        <div className='item' key={d.key}>
+          <div >
             <a href={d.link} target="_blank">
-              
-          <img src={d.img} 
-          alt={d.title}/> 
-          </a>
+            <img src={d.img} 
+            alt={d.title}/> 
+            </a>
           </div>
-          <h3>{d.title}</h3>
+            <h3>{d.title}</h3>
         </div>
         
       ))}
