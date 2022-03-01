@@ -3,4 +3,6 @@ body {
   max-width: 600px;
   max-height: 700px;
   margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
 }
