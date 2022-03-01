@@ -18,7 +18,7 @@ export default function App() {
 {
   id: "experimental",
   title: "Experimental"
-}
+},
 ];
 
 useEffect (() => {
@@ -42,18 +42,24 @@ useEffect (() => {
       <h1>Happy Pancake Day</h1>
       <p>Select the tabs below for different pancake topping ideas!</p>
       <div className='recipieList'>
-      <ul>
+      <ul > 
         {list.map((item) => (
           <RecipeList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
         ))}
       </ul>
       <div className='container'> 
       {data.map((d) => (
-        <div className='item'>
-          <img scr={data.img}
-          alt=""/> 
+        <div className='item' key={d.title}>
+          <div>
+            <a href={d.link} target="_blank">
+              
+          <img src={d.img} 
+          alt={d.title}/> 
+          </a>
+          </div>
           <h3>{d.title}</h3>
         </div>
+        
       ))}
           </div>
       </div>
