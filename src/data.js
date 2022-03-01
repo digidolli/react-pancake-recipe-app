@@ -22,9 +22,9 @@ export const sweetPancakes = [
     },
     {
         id: 4,
-        title: "Gingerbread Pancake",
-        img: "https://static.thedaringkitchen.com/wp-content/uploads/2020/11/drizzling-maple-syrup.jpg",
-        link: "https://thedaringkitchen.com/vegan-gingerbread-pancakes/",
+        title: "Fluffy Pancake",
+        img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/fluffy-pancakes-8ebc2cf.jpg?quality=90&webp=true&resize=440,400",
+        link: "https://www.bbcgoodfood.com/recipes/fluffy-pancakes",
         key: "4"
     }
 ];

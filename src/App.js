@@ -40,7 +40,7 @@ useEffect (() => {
   return (
     <div className="App" >
       <h1>Happy Pancake Day!!</h1>
-      <p>Select the tabs below for different pancake topping ideas!</p>
+      <p>Select the tabs below for different pancake ideas</p>
       <div className='recipieList' >
       <ul > 
         {list.map((item) => (
