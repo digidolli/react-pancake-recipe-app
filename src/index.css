@@ -7,3 +7,15 @@ body {
   letter-spacing: 1px;
   text-align: center;
 }
+
+footer {
+  color: #f25c54;
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
