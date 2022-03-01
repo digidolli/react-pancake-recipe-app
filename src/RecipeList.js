@@ -1,10 +1,10 @@
 import React from "react"
-import "./RecipeList.css"
+import ".//RecipeList.css"
 
-export default function RecipeList(){
+export default function RecipeList({title, active, setSelected, id}){
     return(
-        <li className="Recipelist">
-
+        <li className={active ? "RecipeList active" : "RecipeList"} onClick={() => setSelected(id)}>
+            {title}
         </li>
     )
 }

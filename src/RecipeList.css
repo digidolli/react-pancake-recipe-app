@@ -1,10 +1,10 @@
-.Recipelist {
+li {
   font-size: 14px;
   margin-right: 40px;
   padding: 7px;
   border-radius: 20px;
   cursor: pointer;
 }
-.active {
+li.active {
   background-color: pink;
 }

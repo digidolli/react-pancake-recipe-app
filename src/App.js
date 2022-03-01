@@ -1,8 +1,10 @@
+import { useEffect, useState } from 'react';
 import './App.css';
-import RecipeList from './RecipeList';
+import RecipeList from './RecipeList.js';
 
 export default function App() {
-const list = [
+  const [selected, setSelected] = useState("sweet")
+  const list = [
   {
     id: "sweet",
   title: "Sweet",
@@ -24,7 +26,7 @@ const list = [
       <div className='recipieList'>
       <ul>
         {list.map((item) => (
-          <RecipeList />
+          <RecipeList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
         ))}
       </ul>
       <div className='container'> 
